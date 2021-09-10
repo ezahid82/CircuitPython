@@ -1,4 +1,4 @@
-# Write your code here :-)
+# Made by Ezhar!
 import board
 import neopixel
 import time
