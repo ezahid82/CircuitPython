@@ -4,6 +4,7 @@ import neopixel
 import time
 
 dot = neopixel.NeoPixel(board.NEOPIXEL, 1)
+dot.brightness = 0.1
 
 
 while True:
