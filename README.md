@@ -76,7 +76,10 @@ while True:
 ```
 
 ### Evidence
+Arduino%20Wiring
+![Servo Capacitive Touch ](Images/WIN-20210915-15-33-43-Pro.gif)
 
+WIN-20210915-15-33-43-Pro.gif
 ### Wiring
 
 ### Reflection
