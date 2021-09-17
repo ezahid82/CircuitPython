@@ -38,11 +38,40 @@ What went wrong / was challenging, how'd you figure it out, and what did you lea
 
 ### Description & Code
 
-In this assignment, we made the servo move left and or right 90* using circuit python. The servo was turning left and right continuesly until we diconnected it. Then, we moved on to making it move using capacitive touch. The servo was able to move left when one wire is touched and right when another wire is touched. You didn't have to touch it physically, but just hover above it. 
+In this assignment, we made the servo move left and or right 90* using circuit python. The servo was turning left and right continuesly until we diconnected it. Then, we moved on to making it move using capacitive touch. The servo was able to move left when one wire is touched and right when another wire is touched. You didn't have to touch it physically, but just hover above it, and it will be able to move because of the magnetic force around it.
 
 
 ```python
-Code goes here
+
+"""CircuitPython Essentials Servo standard servo example"""
+import time
+import board
+import pwmio
+from adafruit_motor import servo
+import touchio
+
+# create a PWMOut object on Pin A2.
+pwm = pwmio.PWMOut(board.A2, duty_cycle=2 ** 15, frequency=50)
+
+touch_A1 = touchio.TouchIn(board.A1)  # Not a touch pin on Trinket M0!
+touch_A5 = touchio.TouchIn(board.A5)  # Not a touch pin on Trinket M0!
+
+# Create a servo object, my_servo.
+my_servo = servo.Servo(pwm)
+
+while True:
+    if touch_A1.value:
+        print("Touched A1!")
+        for angle in range(0, 180, 5):  # 0 - 180 degrees, 5 degrees at a time.
+            my_servo.angle = angle
+            time.sleep(0.05)
+
+    if touch_A5.value:
+        print("Touched A5!")
+        for angle in range(180, 0, -5): # 180 - 0 degrees, 5 degrees at a time.
+            my_servo.angle = angle
+            time.sleep(0.05)
+    time.sleep(0.05)
 
 ```
 
@@ -53,6 +82,7 @@ Code goes here
 ### Reflection
 
 
+---
 
 
 ## CircuitPython_LCD
