@@ -43,7 +43,7 @@ In this assignment, we made the servo move left and or right 90* using circuit p
 
 ```python
 
-"""CircuitPython Essentials Servo standard servo example"""
+"""CircuitPython Capacitive touch servo code."""
 import time
 import board
 import pwmio
@@ -76,14 +76,14 @@ while True:
 ```
 
 ### Evidence
-Arduino%20Wiring
+
 ![Servo Capacitive Touch ](Images/WIN-20210915-15-33-43-Pro.gif)
 
-WIN-20210915-15-33-43-Pro.gif
+
 ### Wiring
 
 ### Reflection
-
+This assignment was a bit challenging at first because we are new to python and bash and this new way of coding and documenting. But, after doing some research online, I found out how to do the coding part which were a couple of "if" statements and "while" loops. It won't be challenging if you think of the code as logic and suedocoding. The servo moves when touched. "A5" etc...
 
 ---
 
