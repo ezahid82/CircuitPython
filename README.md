@@ -39,15 +39,16 @@ while True:
 
 
 ### Evidence
-Pictures / Gifs of your work should go here.  You need to communicate what your thing does.
+
+![Hello mu ](Images/hello circuit python gif.gif)
 
 ### Wiring
-Make an account with your google ID at [tinkercad.com](https://www.tinkercad.com/learn/circuits), and use "TinkerCad Circuits to make a wiring diagram."  It's really easy!  
-Then post an image here.   [here's a quick tutorial for all markdown code, like making links](https://guides.github.com/features/mastering-markdown/)
+
+there was none ;)
 
 ### Reflection
-What went wrong / was challenging, how'd you figure it out, and what did you learn from that experience?  Your ultimate goal for the reflection is to pass on knowledge that will make this assignment better or easier for the next person.
 
+This assignment was challengeing because I thought that we would be using arduino and turned out we used circuit python. The code was the most challenging part with the new way of coding that we required. I figured it out by finding out what the codes translated to from arduiono to circuit python. like **dot.fill** was to change color than arduino's manual L.E.D. change. **time.sleep** translated from **delay**. RGD values were also new to which **255** was the highest value.
 
 
 
