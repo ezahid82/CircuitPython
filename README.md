@@ -40,7 +40,7 @@ while True:
 
 ### Evidence
 
-![Hello mu ](Images/hello%20circuit%20python%20gif.gif)
+![Hello mu ](Images/hello%20circute%20python%20gif.gif)
 
 ### Wiring
 
