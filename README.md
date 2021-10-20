@@ -110,8 +110,55 @@ This assignment was a bit challenging at first because we are new to python and 
 
 ### Description & Code
 
+In this assignment we use **map range** to "map" the distance at certain heights and then change the color of metro as it corresponds. the heights **5**, **20**, **30** needs to change their color gradually drop red to green, and what ever in between. **rgb** values are also neccessary in making the **rainbow** color change.
+
+
 ```python
-Code goes here
+import adafruit_hcsr04
+import time
+import board
+import neopixel
+import simpleio
+
+dot = neopixel.NeoPixel(board.NEOPIXEL, 1)
+dot.brightness = 0.1
+
+
+sonar = adafruit_hcsr04.HCSR04(trigger_pin=board.D5, echo_pin=board.D6)
+cm = 0
+while True:
+    try:
+        cm = sonar.distance
+        print((cm,))
+        if (cm) <= 5:
+            r = 255
+            g = 0
+            b = 0
+            print("Make it red!")
+
+        elif(cm) < 20:
+            r = simpleio.map_range(cm, 5, 20, 255, 0)
+            g = 0
+            b = simpleio.map_range(cm, 5, 20, 0, 255)
+            print("make it red - blue!")
+
+        elif(cm) < 35:  # from cm = 20 to cm = 35
+            r = 0
+            g = simpleio.map_range(cm, 20, 35, 0, 255)
+            b = simpleio.map_range(cm, 20, 35, 255, 0)
+            print("make it blue-green!")
+
+        else:
+            r = 0
+            g = 255
+            b = 0
+
+            print("make it green!")
+        dot.fill((int(r), int(g), int(b)))
+
+    except RuntimeError:
+        print("Retrying!")
+    time.sleep(0.1)
 
 ```
 
@@ -120,8 +167,7 @@ Code goes here
 ### Wiring
 
 ### Reflection
-
-
+This assignment was very difficult because *map ranging* was what I struggled with the most. I found online, a code of *map range* that I used and tinkered with, themn added my *rgb values*
 
 
 
