@@ -166,6 +166,8 @@ while True:
 
 ### Wiring
 
+![Distance Sensor](Images/)
+
 ### Reflection
 This assignment was very difficult because *map ranging* was what I struggled with the most. I found online, a code of *map range* that I used and tinkered with, then added my *rgb values* to change color. next I will make sure that I have the right *rgb values* and *map range* so that my code and logic won't mess up and be confusing.
 
