@@ -11,7 +11,7 @@ This repository will actually serve as a aid to help you get started with your o
 ## Hello_CircuitPython
 
 ### Description & Code
-Description goes here
+This is the first assignment, make the metro board change color using **neopixel** and **dot.__** in python. 
 
 Here's how you make code look like code:
 
