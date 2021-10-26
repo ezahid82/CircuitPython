@@ -100,6 +100,8 @@ while True:
 
 ### Wiring
 
+![Servo Capacitive Touch ](Images/Servo%20C_touch.png)
+
 ### Reflection
 This assignment was a bit challenging at first because we are new to python and bash and this new way of coding and documenting. But, after doing some research online, I found out how to do the coding part which were a couple of "if" statements and "while" loops. It won't be challenging if you think of the code as logic and suedocoding. The servo moves when touched. "A5" etc...
 
