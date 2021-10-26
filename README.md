@@ -164,7 +164,7 @@ while True:
 
 ### Evidence
 
-![Distance Sensor LCD ](Images/CircuitPython-LCD%20Edited.gif)
+![Distance Sensor LCD ](Images/CP%20-%20LCD%20Cropped.gif)
 
 ### Wiring
 
