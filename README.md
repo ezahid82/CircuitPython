@@ -108,7 +108,7 @@ This assignment was a bit challenging at first because we are new to python and 
 ---
 
 
-## CircuitPython_LCD
+## CircuitPython_Distance Sensor
 
 ### Description & Code
 
@@ -177,12 +177,47 @@ This assignment was very difficult because *map ranging* was what I struggled wi
 
 
 
-## NextAssignment
+## Circuit Python _ LCD
 
 ### Description & Code
 
 ```python
-Code goes here
+
+import board
+import touchio
+import time
+from lcd.lcd import LCD
+from lcd.i2c_pcf8574_interface import I2CPCF8574Interface
+
+touch_A1 = touchio.TouchIn(board.A1)  # Not a touch pin on Trinket M0!
+touch_A5 = touchio.TouchIn(board.A5)  # Not a touch pin on Trinket M0!
+
+# get and i2c object
+i2c = board.I2C()
+
+# some LCDs are 0x3f... some are 0x27.
+lcd = LCD(I2CPCF8574Interface(i2c, 0x3f), num_rows=2, num_cols=16)
+
+lcd.print("Hello, Engineer!")
+time.sleep(3)
+lcd.clear()
+diff = 1 # move up one
+counter = 0
+
+while True:
+    if touch_A1.value:
+        counter += diff
+        lcd.set_cursor_pos(0,0)
+        lcd.print("Touched A1!")
+        lcd.set_cursor_pos(1,0)
+        lcd.print(str(counter))
+        time.sleep(0.05)
+    if touch_A5.value:
+        diff = -diff
+        lcd.set_cursor_pos(0,0)
+        lcd.print("Touched A5!")
+        time.sleep(0.05)
+
 
 ```
 
