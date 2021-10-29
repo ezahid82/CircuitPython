@@ -35,6 +35,9 @@ while True:
     dot.fill((225, 0, 0))
     time.sleep(.5)
 
+
+
+
 ```
 
 
@@ -50,6 +53,10 @@ there was none ;)
 
 This assignment was challengeing because I thought that we would be using arduino and turned out we used circuit python. The code was the most challenging part with the new way of coding that we required. I figured it out by finding out what the codes translated to from arduiono to circuit python. like **dot.fill** was to change color than arduino's manual L.E.D. change. **time.sleep** translated from **delay**. RGD values were also new to which **255** was the highest value.
 
+
+
+
+---
 
 
 ## CircuitPython_Servo
@@ -104,6 +111,9 @@ while True:
 
 ### Reflection
 This assignment was a bit challenging at first because we are new to python and bash and this new way of coding and documenting. But, after doing some research online, I found out how to do the coding part which were a couple of "if" statements and "while" loops. It won't be challenging if you think of the code as logic and suedocoding. The servo moves when touched. "A5" etc...
+
+
+
 
 ---
 
@@ -166,7 +176,7 @@ while True:
 
 ### Evidence
 
-![Distance Sensor LCD ](Images/CP%20-%20LCD%20Cropped.gif)
+![Distance Sensor](Images/CP%20-%20LCD%20Cropped.gif)
 
 ### Wiring
 
@@ -177,9 +187,15 @@ This assignment was very difficult because *map ranging* was what I struggled wi
 
 
 
+
+---
+
+
 ## Circuit Python _ LCD
 
 ### Description & Code
+
+This assignment is to make an LCD desplay board count up nad down with the touch of two wires. We use **touchio** to make the counter change *"directions"*. It is the same code fragment used to make the **capacitive touch**. **A1** counts **up** while **A5** counts **down**.
 
 ```python
 
@@ -223,6 +239,17 @@ while True:
 
 ### Evidence
 
+![LCD Display](Images/LCD%20Display.gif)
+
 ### Wiring
 
+![LCD Display Wiring](Images/LCD_Display%20Wiring.png)
+
 ### Reflection
+
+This assignment was a bit difficult because I had never used an lcd before. if you are new and want to find help, *google it!* I found out how to add **rows & collumns** which was used for adding text. Be sure to not get the positions of the *"text"* in the wrong row. Add the first part of code, run it, then add the second.
+
+
+
+
+---
