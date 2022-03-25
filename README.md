@@ -253,3 +253,45 @@ This assignment was a bit difficult because I had never used an lcd before. if y
 
 
 ---
+
+
+
+
+## Photointerrupter
+
+
+### code
+
+```python
+
+
+import time
+import digitalio
+import board
+
+interrupter = digitalio.DigitalInOut(board.D3)
+interrupter.direction = digitalio.Direction.INPUT
+interrupter.pull = digitalio.Pull.UP
+
+counter = 0
+
+triggered = False
+state = False
+
+
+while True:
+    elapsed = time.monotonic()
+    triggered = interrupter.value
+
+    if elapsed % 4 == 0:
+        print("The number of interrupts is: " + str(counter))
+
+    if triggered and not state:    # if the interrupter is triggered and hasn't already been triggered
+        counter += 1
+        state = True
+    elif state and not triggered:     # if the interrupter isnt triggered, update the state
+        state = False
+
+
+```
+
