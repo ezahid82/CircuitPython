@@ -195,7 +195,7 @@ This assignment was very difficult because *map ranging* was what I struggled wi
 
 ### Description & Code
 
-This assignment is to make an LCD desplay board count up nad down with the touch of two wires. We use **touchio** to make the counter change *"directions"*. It is the same code fragment used to make the **capacitive touch**. **A1** counts **up** while **A5** counts **down**.
+This assignment is to make an LCD desplay board count up and down with the touch of two wires. We use **touchio** to make the counter change *"directions"*. It is the same code fragment used to make the **capacitive touch**. **A1** counts **up** while **A5** counts **down**.
 
 ```python
 
@@ -260,6 +260,12 @@ This assignment was a bit difficult because I had never used an lcd before. if y
 ## Photointerrupter
 
 
+### Description & Code
+
+This assignement is to have a working **photointerrupter** that also counts how many times it is interrupted and displays it every four seconds. 
+
+
+
 ### code
 
 ```python
@@ -294,4 +300,16 @@ while True:
 
 
 ```
+
+### Evidence
+
+
+
+### Wiring
+
+
+
+### Reflection
+This assignment was easire...
+
 
