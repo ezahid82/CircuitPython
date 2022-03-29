@@ -306,10 +306,10 @@ while True:
 
 
 ### Wiring
-
 ![Photo Interrupter Wiring](Images/PhotoInterrupter%20Wiring.PNG)
 
+
 ### Reflection
-This assignment was easier since there wasn't much to code.
+This assignment was easier since there wasn't much to wire. The code part however required some defining of variables but it made it easire to run the function. When using a photo Interrupter, it is best to know that the sensor is *OUTPUT*ing data for us to *INPUT*. it is best not to get the two confused else the code will be faulty.
 
 
