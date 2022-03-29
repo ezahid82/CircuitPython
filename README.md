@@ -302,14 +302,14 @@ while True:
 ```
 
 ### Evidence
-
+![Photo Interrupter](Images/PhotoInterrupter.gif)
 
 
 ### Wiring
 
-
+![Photo Interrupter Wiring](Images/PhotoInterrupter%20Wiring.PNG)
 
 ### Reflection
-This assignment was easire...
+This assignment was easier since there wasn't much to code.
 
 
